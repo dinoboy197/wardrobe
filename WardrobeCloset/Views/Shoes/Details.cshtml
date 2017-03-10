@@ -1,0 +1,33 @@
+﻿@model WardrobeCloset.Models.Sho
+
+@{
+    ViewBag.Title = "Details";
+}
+
+@* Below is the Details View Bootstrap Styling for an individual Item. Offset view, left side is photo, right side is content. *@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-9">
+            <img class="img-responsive" src="@Url.Content(Model.Photo)" /> @*This shows the photo that is uploaded, must upload a photo to continue.*@
+        </div>
+        <div class="col-lg-3">
+            <div class="text-center detailscontent">
+                <h4 class="detailsheader"><u>@Html.DisplayFor(model => model.Name)</u></h4>@*Displays the Item Name*@
+                <br />
+                <p><strong>@Html.DisplayNameFor(model => model.ClothingType):</strong> @Html.DisplayFor(model => model.ClothingType)</p>
+                <p>  <strong>@Html.DisplayNameFor(model => model.Brand):</strong> @Html.DisplayFor(model => model.Brand)</p>
+                <p><strong>@Html.DisplayNameFor(model => model.Color):</strong> @Html.DisplayFor(model => model.Color)</p>
+                <p><strong>@Html.DisplayNameFor(model => model.Occasion):</strong> @Html.DisplayFor(model => model.Occasion)</p>
+                <p><strong>@Html.DisplayNameFor(model => model.Season):</strong> @Html.DisplayFor(model => model.Season)</p>
+                <p><strong>@Html.DisplayNameFor(model => model.Favorite):</strong> @Html.DisplayFor(model => model.Favorite)</p>
+                <p><strong>@Html.DisplayNameFor(model => model.TimesWorn):</strong> @Html.DisplayFor(model => model.TimesWorn)</p>
+                <p><strong>@Html.DisplayNameFor(model => model.Dirty):</strong> @Html.DisplayFor(model => model.Dirty)</p>
+                @*Outfits table not working but this was my outfits property <p><strong>@Html.DisplayNameFor(model => model.Outfit.OutfitName):</strong> @Html.DisplayFor(model => model.Outfit.OutfitName)</p>*@
+                <p>
+                    @Html.ActionLink("Edit", "Edit", new { id = Model.ShoesID }) |
+                    @Html.ActionLink("Back to List", "Index")
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

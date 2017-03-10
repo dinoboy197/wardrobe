@@ -1,0 +1,175 @@
+﻿/*Body of Document Default Settings*/
+body {
+    padding-top: 0px;
+    padding-bottom: 20px;
+    font-family: 'Muli', sans-serif;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+/*Header settings*/
+.page-header {
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.header-top {
+    background-color: black;
+}
+
+#mainheader {
+    color: white;
+    text-align: center;
+    font-size: 46px;
+}
+/*Navbar centering, colors, display, and more*/
+.navbar-collapse {
+    text-align: center;
+}
+
+.navbar.navbar.navbar-static-top {
+    background-color: #ECECEC;
+    margin-bottom: 0px;
+    border-bottom-width: 0px;
+}
+
+.navbar-toggle {
+    background-color: black;
+}
+
+.icon-bar {
+    background-color: white;
+}
+
+#centered {
+    display: inline-block;
+    float: none;
+}
+
+a {
+    color: black;
+    font-size: 20px;
+}
+/*Carousel settings*/
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 80%;
+    margin: auto;
+    height: 700px;
+    max-height: 700px;
+    background-size: cover;
+}
+/*all columns of size 6 and additional settings*/
+.row .col-md-6 {
+    padding: 0px;
+    margin: 0px;
+}
+
+    .row .col-md-6 .thumbnail {
+        height: 478px;
+        width: auto;
+        color: white;
+        padding: 0px;
+        margin-right: 0px;
+    }
+/*Images for Home/Index grid*/
+.top-image {
+    background-image: url('rackofshirts.jpg');
+    background-size: cover;
+    margin-bottom: 0px;
+}
+
+.bottom-image {
+    background-image: url('clothinglinepants.jpg');
+    background-size: cover;
+    margin-bottom: 0px;
+}
+
+.shoe-image {
+    background-image: url('flats.jpg');
+    background-size: cover;
+    margin-bottom: 0px;
+}
+
+.access-image {
+    background-image: url('accessNew.jpg');
+    background-size: cover;
+    margin-bottom: 0px;
+}
+/*All Headers and Content on an Models Index Page*/
+.indexheader {
+    border: 1px solid black;
+}
+
+    .indexheader > h2, p {
+        text-align: center;
+    }
+
+.detailscontent {
+    font-size: 20px;
+}
+
+.detailsheader {
+    font-size: 25px;
+}
+
+.indexcontent {
+    font-size: 18px;
+}
+/*All Thumbnails*/
+.thumbnail {
+    border: 0px;
+     background-color:#ECECEC;
+}
+
+/*all images of class responsive*/
+.img-responsive {
+    background-size: cover;
+}
+/*Words on top of Home page Images*/
+.newheader{
+    color:black;
+    font-weight:bold;
+    text-align:center;
+    display:inline;
+}
+.newheader h2{
+    margin-top:1px;
+    margin-bottom:0px;
+    font-weight:bold;
+    font-size:30px;
+}
+/*Outfit Settings*/
+.outfit {
+    background-image: url('Outfit.jpg');
+    background-size:cover;
+}
+.outfitthumb{
+    margin-top:20px;
+    background-color: rgba(255,255,255,0.8) ;
+}
+.indexheaderoutfit {
+    border: none;
+}
+
+    .indexheaderoutfit > h2, p {
+        text-align: center;
+    }
